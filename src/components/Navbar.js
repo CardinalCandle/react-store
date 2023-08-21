@@ -25,9 +25,7 @@ export default class Navbar extends Component {
         <ButtonContainer>
             <span className="mr-2">
                 <i className="fa-solid fa-cart-plus"/>
-            </span>
-                
-        My Cart
+            </span> My Cart
         </ButtonContainer>
     </Link>
     </NavWrapper>
