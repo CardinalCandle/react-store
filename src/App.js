@@ -17,7 +17,7 @@ function App() {
       <Route exact path="/" Component={ProductList}/>
       <Route path="/details" Component={Details}/>
       <Route path="/cart" Component={Cart}/>
-      <Route Component={Default}/>
+      <Route path="*" Component={Default}/>
       </Routes>
       <Modal>
 
