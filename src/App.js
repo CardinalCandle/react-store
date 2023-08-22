@@ -8,7 +8,7 @@ import Details from './components/Details';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default';
 import Modal from "./components/Modal";
-
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 function App() {
   return (
     <React.Fragment>
@@ -20,8 +20,9 @@ function App() {
       <Route path="*" Component={Default}/>
       </Routes>
       <Modal>
-
       </Modal>
+      <PayPalScriptProvider options={{ clientId: "test" }}>
+        </PayPalScriptProvider>
     </React.Fragment>
     );
 }

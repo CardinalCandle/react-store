@@ -7,6 +7,7 @@ import CartList from './CartList';
 import CartTotals from './CartTotals';
 export default class Cart extends Component {
   render() {
+    console.log(window.history);
     return (
       <section>
         <ProductConsumer>
@@ -18,8 +19,7 @@ export default class Cart extends Component {
                 <Title name='your' title='cart' />
                 <CartColumns />
                 <CartList value={value}/>
-                <CartTotals value={value}/>
-                
+                <CartTotals value={value} history={window.history}/>
                 </React.Fragment>
               );
             }
